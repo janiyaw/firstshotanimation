@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="radius,html,css,element" />
+    <meta name="description" content="CSS Animation - Navbar" />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Janiya" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="Wednesday, 12 Aug 2020 18:43:23 GMT" />
+    <title> </title>
+    <style>
+      ul {
+        position: relative;
+        top: 225px;
+      }
+      li {
+        list-style-type: none;
+        font-family: arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1.5em;
+      }
+      li:hover {
+        transform: scale(1.5);
+        animation-name: listeditem;
+        animation-duration: 800ms;
+      }
+      @keyframes listeditem {
+        100% {
+          color: white;
+        }
+      }
+      div {
+        animation-name: list;
+        animation-duration: 10s;
+        width: 100%;
+        height: 500px;
+      }
+      @keyframes list {
+        0% {
+          background-color: yellow;
+        }
+        25% {
+          background-color: pink;
+        }
+        50% {
+          background-color: #3ce7dd;
+        }
+        75% {
+          background-color: orange;
+        }
+        100% {
+          background-color: #41e73c;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+  </body>
+</html>
